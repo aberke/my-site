@@ -2,16 +2,50 @@
 <html>
 	<head>  
 		<meta charset="utf-8">  
-		<title>** | Alexandra Berke</title>  
+		<title>Alexandra Berke</title>  
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 		<meta name="description" content="Site By Alexandra Berke">  
 		<meta name="author" content="Alexandra Berke">
 		<link rel="shortcut icon" href="static/images/escher-birds.ico">
 
 		<link rel="stylesheet" href="static/css/index.css">
-		<script type="text/javascript" src="static/js/index.js"></script>
-
 	</head>
 	<body>
+			<!-- handle div -->
+			<div class="tab-div" id="handle-div">
+				<h5>twitter <em>@AlexandraBerke</em></h5>
+				<h5>github <em>aberke</em></h5>
+				<h5><em>alex@alexandraberke.com</em></h5>
+			</div>
+			<!-- handle div -->
+			<!-- resume-div -->
+			<div class="tab-div" id="resume-div">
+				<ul id="resume-navbar">
+					<li id="resume-contact-tab" class="active" onclick="resumeSectionActivate('resume-contact')"><a href="#resume-contact"><h4>Contact</h4></a></li>
+					<li id="resume-education-tab" class="" onclick="resumeSectionActivate('resume-education')"><a href="#resume-education"><h4>Education</h4></a></li>
+					<li id="resume-experience-tab" class="" onclick="resumeSectionActivate('resume-experience')"><a href="#resume-experience"><h4>Work</h4></a></li>  
+					<li id="resume-courses-tab" class="" onclick="resumeSectionActivate('resume-courses')"><a href="#resume-courses"><h4>Relevant Courses</h4></a></li> 
+					<li id="resume-activities-tab" class="" onclick="resumeSectionActivate('resume-activities')"><a href="#resume-activities"><h4>Activities</h4></a></li>  
+				</ul> 
+				<div id="resume-container">
+		 			<div id="resume">  
+						<img class="" id="resume-contact" src="static/images/resume-contact.png" onmouseover="resumeSectionActivate('resume-contact')">  
+						<img class="" id="resume-education" src="static/images/resume-education.png" onmouseover="resumeSectionActivate('resume-education')">
+						<img class="" id="resume-experience" src="static/images/resume-CS-work-experience.png" onmouseover="resumeSectionActivate('resume-experience')">
+						<img class="" id="resume-courses" src="static/images/resume-course-work.png" onmouseover="resumeSectionActivate('resume-courses')">
+						<img class="" id="resume-activities" src="static/images/resume-activities-volunteer.png" onmouseover="resumeSectionActivate('resume-activities')"> 
+					</div>
+				</div>
+			</div>
+			<!-- resume-div -->
+		<div id="nav-container">
+			<ul id="tabs">  
+				<li id="tab-filler-left"></li> 
+				<li id="handle-tab"><a onclick="tabClicked('handle')" href="#"><h3>Handle</h3></a></li>
+				<li id="resume-tab"><a onclick="tabClicked('resume')" href="#"><h3>Resume</h3></a></li> 
+				<li id="tab-filler-right"></li> 
+			</ul>
+		</div>
+		<script type="text/javascript" src="static/js/index.js"></script>
 	</body>
 </html>

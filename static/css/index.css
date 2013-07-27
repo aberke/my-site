@@ -1,6 +1,124 @@
+/* mass reset */
+/*  Mass Reset */
+*{ margin: 0; padding: 0; border: 0; 
+	font-family: "source-sans-pro", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	color: #074659;
+	list-style-type: none;
+	text-decoration: none;
+}
+
 body{
-		background: url(../images/nh-trip.jpg);
+	background: url(../images/nh-trip.jpg);
 	background-repeat: no-repeat; 
 	background-size: cover;
 	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+/* nav below */
+#nav-container{
+	position: absolute;
+	bottom: 10px;
+	width: 90%;
+	left: 5%;
+}
+#tabs li{
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	background-color: white;
+	opacity: 0.6;
+}
+#tabs li:hover{opacity: 0.75;}
+#tabs li.active{
+	background-color: transparent;
+	opacity: 1;
+}
+#tabs li h3{padding: 6px;}
+#tabs li.active h3{color: white;}
+#tab-filler-left{left: 10px;}
+#tabs #tab-filler-right{
+	left: 322px;
+	right: 10px;
+	width: auto;
+}
+#handle-tab{left: 114px;}
+#resume-tab{left: 218px;}
+/* nav above */
+
+.tab-div{display: none;}
+.tab-div-active{display: block;}
+
+/* handle below */
+#handle-div{
+	position: relative;
+	width: 400px;
+	margin: auto;
+	top: 50%;
+	background-color: white;
+	opacity: 0.7;
+	text-align: center;
+	padding: 15px;
+	border: 1px solid white;
+	border-radius: 6px;
+}
+#handle-div h5{padding: 5px;}
+#handle-div h5 em{
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+/* handle above */
+
+/* resume below */
+#resume-div{
+	position: absolute;
+	top: 50px;
+	bottom: 100px;
+	width: 70%;
+	left: 15%;
+	background-color: rgba(255,255,255,0.4);
+	border: 1px solid white;
+	border-radius: 8px;
+	color: rgba(7, 70, 89, 0.8);
+}
+#resume-navbar{
+	position: relative;
+	margin-right: 5%;
+	margin-left: 5%;
+	top: 10px;
+}
+#resume-navbar li{
+	width: 18%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+}
+#resume-navbar li h4{color: rgba(7, 70, 89, 0.4);}
+#resume-navbar li.active h4{color: rgba(7, 70, 89, 1);}
+#resume-navbar li:hover h4{color: rgba(7, 70, 89, 0.6);}
+#resume-container{
+	width: 90%;
+	position: absolute;
+	top: 60px;
+	bottom: 30px;
+	left: 5%;
+}
+#resume{  
+	width: 100%;
+	height: 100%;
+	overflow: auto; 
+	background-color: white;
+}
+#resume img{
+	border: 3px solid white;
+	width: 99%;
+}
+#resume img.active{
+	border-width: 3px;
+	border-color: rgba(7, 70, 89, 0.4);
 }
