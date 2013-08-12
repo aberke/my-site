@@ -66,11 +66,22 @@ body{
 	border: 1px solid white;
 	border-radius: 6px;
 }
-#handle-div h5{padding: 5px;}
+#handle-div a{
+	padding: 5px;
+	width: 100%;
+	display: block;
+}
+#handle-div h5{
+	display: inline-block;
+}
 #handle-div h5 em{
 	font-style: normal;
 	font-size: 15px;
 	font-weight: 600;
+}
+#github-handle{padding-top: 10px;}
+#github-icon{
+	vertical-align: middle;
 }
 
 /* handle above */
