@@ -6,11 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 		<meta name="description" content="Site By Alexandra Berke">  
 		<meta name="author" content="Alexandra Berke">
-		<link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
-		<link rel="shortcut icon" type="image/x-icon" href="http://alexandraberke.com/favicon.ico" />
+		<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
 
 		<link rel="stylesheet" href="static/css/index.css">
 		
+		<script type="text/javascript" src="static/js/index.js"></script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,41 +21,23 @@
 		</script>
 	</head>
 	<body>
+		<div id='content'>
 			<!-- handle div -->
-			<div class="tab-div" id="handle-div">
-				<a target="_blank" href="https://twitter.com/AlexandraBerke"><h5>twitter <em>@AlexandraBerke</em></a>
-				<a id="github-handle" target="_blank" href="http://github.com/aberke"</a><img id="github-icon" src="static/images/github-icon.gif" height="25px"><h5>github <em>aberke</em></h5></a>
-				<a href="mailto:alex@alexandraberke.com?subject=[Website]"><h5>email <em>alex@alexandraberke.com</em></h5></a>
+			<div id="handle-div">
+				<a target="_blank" href="https://twitter.com/AlexandraBerke"><img src="static/img/twitter_bird.png" height="40px"><p>@AlexandraBerke</p></a>
+				<a id="github-handle" target="_blank" href="http://github.com/aberke"><img src="static/img/github-icon.gif" height="40px"><p>aberke</p></a>
+				<a href="mailto:alex@alexandraberke.com?subject=[Website]"><img src="static/img/email_icon.png" height="40px"><p>alex@alexandraberke.com</p></a>
 			</div>
 			<!-- handle div -->
+
 			<!-- resume-div -->
-			<div class="tab-div" id="resume-div">
-				<ul id="resume-navbar">
-					<li id="resume-contact-tab" class="active" onclick="resumeSectionActivate('resume-contact')"><a href="#resume-contact"><h4>Contact</h4></a></li>
-					<li id="resume-education-tab" class="" onclick="resumeSectionActivate('resume-education')"><a href="#resume-education"><h4>Education</h4></a></li>
-					<li id="resume-experience-tab" class="" onclick="resumeSectionActivate('resume-experience')"><a href="#resume-experience"><h4>Work</h4></a></li>  
-					<li id="resume-courses-tab" class="" onclick="resumeSectionActivate('resume-courses')"><a href="#resume-courses"><h4>Relevant Courses</h4></a></li> 
-					<li id="resume-activities-tab" class="" onclick="resumeSectionActivate('resume-activities')"><a href="#resume-activities"><h4>Activities</h4></a></li>  
-				</ul> 
-				<div id="resume-container">
-		 			<div id="resume">  
-						<img class="" id="resume-contact" src="static/images/resume-contact.png" onmouseover="resumeSectionActivate('resume-contact')">  
-						<img class="" id="resume-education" src="static/images/resume-education.png" onmouseover="resumeSectionActivate('resume-education')">
-						<img class="" id="resume-experience" src="static/images/resume-CS-work-experience.png" onmouseover="resumeSectionActivate('resume-experience')">
-						<img class="" id="resume-courses" src="static/images/resume-course-work.png" onmouseover="resumeSectionActivate('resume-courses')">
-						<img class="" id="resume-activities" src="static/images/resume-activities-volunteer.png" onmouseover="resumeSectionActivate('resume-activities')"> 
-					</div>
-				</div>
-			</div>
-			<!-- resume-div -->
-		<div id="nav-container">
-			<ul id="tabs">  
-				<li id="tab-filler-left"></li> 
-				<li id="handle-tab"><a onclick="tabClicked('handle')" href="#"><h3>Handle</h3></a></li>
-				<li id="resume-tab"><a onclick="tabClicked('resume')" href="#"><h3>Resume</h3></a></li> 
-				<li id="tab-filler-right"></li> 
-			</ul>
+			<div id="resume-div">
+				<img src="static/resume.png">
+			</div> <!-- resume-div -->
 		</div>
-		<script type="text/javascript" src="static/js/index.js"></script>
+		<ul id="tabs">
+			<li id='handle-tab' onclick="selectTab(this);selectContent('handle-div');"><span class="tab-title">Handle</span></li>
+			<li id='resume-tab' onclick="selectTab(this);selectContent('resume-div');"><span class="tab-title">Resume</span></li>
+		</ul>
 	</body>
 </html>

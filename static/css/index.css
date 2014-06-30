@@ -1,4 +1,3 @@
-/* mass reset */
 /*  Mass Reset */
 *{ margin: 0; padding: 0; border: 0; 
 	font-family: "source-sans-pro", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -7,77 +6,91 @@
 	text-decoration: none;
 }
 
-body{
-	background: url(../images/nh-trip.jpg);
-	background-repeat: no-repeat; 
-	background-size: 100%;
+html, body{
 	background-color: black;
 	height: 100%;
 	width: 100%;
-	position: absolute;
-	bottom: 0;
 }
-/* nav below */
-#nav-container{
-	position: absolute;
-	bottom: 10px;
+
+#content {
+	height: 90%;
+}
+
+/*- tabs ------------------------*/
+#tabs {
 	width: 90%;
-	left: 5%;
-}
-#tabs li{
-	width: 100px;
+	margin: auto;
 	height: 40px;
-	position: absolute;
-	bottom: 10px;
-	text-align: center;
 	background-color: white;
 	opacity: 0.6;
 }
-#tabs li:hover{opacity: 0.75;}
-#tabs li.active{
-	background-color: transparent;
-	opacity: 1;
+#tabs li {
+	height: 100%;
+	border-right: 4px solid black;
+	border-left: 4px solid black;
+	display: inline-block;
+	min-width: 100px;
+	vertical-align: top;
+	text-align: center;
+	cursor: pointer;
+	float: left;
 }
-#tabs li h3{padding: 6px;}
-#tabs li.active h3{color: white;}
-#tab-filler-left{left: 10px;}
-#tabs #tab-filler-right{
-	left: 322px;
-	right: 10px;
-	width: auto;
+#handle-tab {
+	margin-left: 100px;
 }
-#handle-tab{left: 114px;}
-#resume-tab{left: 218px;}
-/* nav above */
+@media (max-width: 500px) {
+	#handle-tab {
+		margin-left: 30px;
+	}
+}
+#tabs li.selected,
+#tabs li:hover {
+	background-color: black;
+	cursor: initial;
+}
+#tabs li.selected .tab-title,
+#tabs li:hover .tab-title{
+	background-color: black;
+	color: white;
+}
+.tab-title {
+	margin-top: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+}
+/*------------------------ tabs -*/
 
-.tab-div{display: none;}
-.tab-div-active{display: block;}
+#handle-div,
+#resume-div{display: none;}
+#handle-div.selected,
+#resume-div.selected{display: block;}
 
 /* handle below */
 #handle-div{
 	position: relative;
-	width: 400px;
+	width: auto;
+	max-width: 400px;
 	margin: auto;
-	top: 50%;
+	top: 40%;
 	background-color: white;
 	opacity: 0.7;
 	text-align: center;
-	padding: 15px;
+	padding: 1em;
 	border: 1px solid black;
 	border-radius: 6px;
+	font-size: 20px;
 }
 #handle-div a{
-	padding: 5px;
-	width: 100%;
 	display: block;
 }
-#handle-div h5{
+#handle-div p{
 	display: inline-block;
+	margin-top: 8px;
+	vertical-align: top;
 }
-#handle-div h5 em{
-	font-style: normal;
-	font-size: 15px;
-	font-weight: 600;
+#handle-div img{
+	height: 40px;
 }
 #github-handle{padding-top: 10px;}
 #github-icon{
@@ -88,49 +101,17 @@ body{
 
 /* resume below */
 #resume-div{
-	position: absolute;
-	top: 50px;
-	bottom: 100px;
-	width: 70%;
-	left: 15%;
 	background-color: rgba(255,255,255,0.4);
 	border: 1px solid white;
 	border-radius: 8px;
-	color: rgba(7, 70, 89, 0.8);
-}
-#resume-navbar{
-	position: relative;
-	margin-right: 5%;
-	margin-left: 5%;
-	top: 10px;
-}
-#resume-navbar li{
-	width: 18%;
-	float: left;
-	margin: 1%;
-	text-align: center;
-}
-#resume-navbar li h4{color: rgba(7, 70, 89, 0.4);}
-#resume-navbar li.active h4{color: rgba(7, 70, 89, 1);}
-#resume-navbar li:hover h4{color: rgba(7, 70, 89, 0.6);}
-#resume-container{
+	padding: 10px;
 	width: 90%;
-	position: absolute;
-	top: 60px;
-	bottom: 30px;
-	left: 5%;
+	height: 90%;
+	max-width: 900px;
+	margin: 50px auto;
+	overflow: scroll;
 }
-#resume{  
+#resume-div img{
+	display: inline-block;
 	width: 100%;
-	height: 100%;
-	overflow: auto; 
-	background-color: white;
-}
-#resume img{
-	border: 3px solid white;
-	width: 99%;
-}
-#resume img.active{
-	border-width: 3px;
-	border-color: rgba(7, 70, 89, 0.4);
 }
