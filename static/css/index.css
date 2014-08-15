@@ -111,7 +111,9 @@ html, body{
 	margin: 50px auto;
 	overflow: scroll;
 }
-#resume-div img{
+#resume-div img,
+#resume-div embed{
 	display: inline-block;
 	width: 100%;
+	height: 100%;
 }
