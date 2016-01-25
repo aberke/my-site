@@ -115,5 +115,7 @@ html, body{
 #resume-div embed{
 	display: inline-block;
 	width: 100%;
+}
+#resume-div embed {
 	height: 100%;
 }
