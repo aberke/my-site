@@ -23,10 +23,6 @@
 		</script>
 	</head>
 	<body>
-		<ul id="tabs">
-			<li id='handle-tab' onclick="selectTab(this);selectContent('handle-div');"><span class="tab-title">-  = - = -</span></li>
-			<li id='resume-tab' onclick="selectTab(this);selectContent('resume-div');"><span class="tab-title">PDF Resume</span></li>
-		</ul>
 		<div id='content'>
 			<!-- handle div -->
 			<div id="handle-div">
@@ -35,6 +31,15 @@
 				<a href="mailto:alex@alexandraberke.com?subject=[Website]"><img src="static/img/email_icon.png" height="40px"><p>alex@alexandraberke.com</p></a>
 			</div>
 			<!-- handle div -->
+
+			<!-- resume-div -->
+			<div id="resume-div">
+				<embed src="static/resume.pdf"></embed>
+			</div> <!-- resume-div -->
 		</div>
+		<ul id="tabs">
+			<li id='handle-tab' onclick="selectTab(this);selectContent('handle-div');"><span class="tab-title">Handle</span></li>
+			<li id='resume-tab' onclick="selectTab(this);selectContent('resume-div');"><span class="tab-title">Resume</span></li>
+		</ul>
 	</body>
 </html>

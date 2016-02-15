@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" ng-app="mySiteApp">
+<head>
+    <base href="/">
+  	<meta charset="utf-8">
+  	<title>Alexandra Berke</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<meta name="description" content="Contact / Resume / API">  
+	<meta name="author" content="Alexandra Berke">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="static/css/index.css">
+	<link rel="stylesheet" href="static/css/tabs.css">
+	<!-- style sheets  -->
+
+
+	<!-- vendor js -->
+	<script src="/static/js/vendor/angular.min.js"></script>
+	<script src="/static/js/vendor/angular-route.min.js"></script>
+	<!-- vendor js -->
+
+
+    <script src="/static/js/app.js"></script>
+	<script src="/static/js/controllers.js"></script>
+    <!-- <script src="/static/js/routes.js"></script> -->
+
+</head>
+<body ng-controller="MainCntl">
+	
+	<ul id="tabs">
+		<li id='handle-tab'><a href="/" class="tab-title">-  = - = -</a></li>
+		<li id='resume-tab'><a href="/resume-pdf" class="tab-title">PDF Resume</a></li>
+		<li id='resume-tab'><a href="/resume-api" class="tab-title">API</a></li>
+	</ul>
+
+  <!-- view determined by routes -->
+  <div id="content" ng-view></div>
+
+
+    <!-- todo:  -->
+    <!-- google analytics - pushed to on route change from MainCntl -->
+    <!-- google analytics -->
+
+    <!-- using fastclick.js to prevent delay on mobile browsers -->
+<!--     <script type='application/javascript' src="/static/js/vendor/fastclick.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            FastClick.attach(document.body);
+        }, false);
+    </script> -->
+</body>
+</html>
+
+
+
+
+
+
+

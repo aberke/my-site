@@ -1,0 +1,235 @@
+/* line 7, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  white-space: nowrap;
+  font-family: monospace;
+  padding: 1em;
+  line-height: 1.4;
+}
+/* line 15, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel * {
+  margin: 0;
+  padding: 0;
+}
+/* line 21, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .panel {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 26, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .list {
+  list-style-type: none;
+  padding: 0.5em 0;
+}
+/* line 32, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel ul:before {
+  content: '{';
+}
+/* line 35, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel ul:after {
+  content: '}';
+}
+/* line 41, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel ol:before {
+  content: '[';
+}
+/* line 44, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel ol:after {
+  content: ']';
+}
+/* line 49, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .key {
+  margin-left: 1em;
+  font-weight: bold;
+}
+/* line 55, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .pair.simple {
+  max-width: 600px;
+  padding-left: 30px;
+  text-indent: -30px;
+  white-space: normal;
+}
+/* line 64, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .pair .val:after {
+  content: ",";
+}
+/* line 67, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .pair:last-child .val:after {
+  display: none;
+}
+/* line 73, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .val-inner {
+  display: inline-block;
+  max-width: 28em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+/* line 81, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .expander {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: rgba(211, 223, 240, 0);
+  -moz-transition: background-color 0.3s ease 0.5;
+  -o-transition: background-color 0.3s ease 0.5;
+  -webkit-transition: background-color 0.3s ease;
+  -webkit-transition-delay: 0.5;
+  transition: background-color 0.3s ease 0.5;
+}
+/* line 90, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .expander:hover {
+  background-color: #d3dff0;
+  background-color: #d3dff0;
+}
+/* line 97, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .expander .key:before {
+  content: "+";
+  margin-right: 0.5em;
+}
+/* line 103, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .expanded {
+  position: relative;
+}
+/* line 108, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .expanded > .expander .key:before {
+  content: "-";
+}
+/* line 112, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .expanded > .expander .val {
+  opacity: 0;
+}
+/* line 118, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .expanded > .panel {
+  margin-left: 2em;
+}
+/* line 123, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .boolean {
+  color: red;
+}
+/* line 126, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .string {
+  color: green;
+}
+/* line 129, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .number {
+  color: blue;
+}
+/* line 134, /app/public/bower_components/jsonpanel/sass/jsonpanel.scss */
+.jsonpanel .array .val-inner,
+.jsonpanel .object .val-inner {
+  color: #a5a5a5;
+}
+
+@-moz-keyframes fadeInText {
+  /* line 8, /app/views/application.css.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 11, /app/views/application.css.scss */
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInText {
+  /* line 8, /app/views/application.css.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 11, /app/views/application.css.scss */
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInText {
+  /* line 8, /app/views/application.css.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 11, /app/views/application.css.scss */
+  100% {
+    opacity: 1;
+  }
+}
+/* line 17, /app/views/application.css.scss */
+.jsonpanel {
+  font-size: 1.25em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 28, /app/views/application.css.scss */
+.list {
+  -moz-animation-name: fadeInText;
+  -webkit-animation-name: fadeInText;
+  animation-name: fadeInText;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 36, /app/views/application.css.scss */
+.val {
+  opacity: 1;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+/* line 41, /app/views/application.css.scss */
+.meta-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.25em 0.5em;
+  position: fixed;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+/* line 50, /app/views/application.css.scss */
+.meta-links a {
+  color: black;
+  font-family: sans-serif;
+  font-size: 0.7em;
+  opacity: 0.6;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+/* line 58, /app/views/application.css.scss */
+.meta-links a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 650px) {
+  /* line 65, /app/views/application.css.scss */
+  .jsonpanel {
+    font-size: 9px;
+    padding-top: 50px;
+  }
+
+  /* line 70, /app/views/application.css.scss */
+  .pair.simple {
+    max-width: 300px;
+  }
+}

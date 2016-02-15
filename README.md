@@ -1,10 +1,10 @@
-<img width="100px" src="http://www.alexandraberke.com/static/favicon-big.gif" alt="logo" align="right" />
+<img width="200px" src="http://www.alexandraberke.com/static/favicon-big.gif" alt="logo" align="right" />
 
 my-site
 =======
 
-- hello world
-	- http://alexandraberke.com
+- hello (ww)world: http://www.alexandraberke.com
+- api: http://api.alexandraberke.com
 
 
 Running Locally

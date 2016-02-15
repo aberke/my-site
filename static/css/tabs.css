@@ -1,0 +1,45 @@
+/*
+css rules for tabs
+*/
+
+
+#tabs {
+	border-top: 3px solid #074659;
+	border-bottom: 3px solid #074659;
+	margin: auto;
+	height: 40px;
+	padding: 0.5em;
+}
+#tabs li {
+	height: 100%;
+	border-right: 4px solid #074659;
+	display: inline-block;
+	min-width: 100px;
+	vertical-align: top;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	padding: 0 1em 0 1em;
+}
+#handle-tab {
+	margin-left: 100px;
+}
+@media (max-width: 500px) {
+	#handle-tab {
+		margin-left: 30px;
+	}
+}
+#tabs li.selected,
+#tabs li:hover {
+	cursor: pointer;
+}
+#tabs li.selected .tab-title,
+#tabs li:hover .tab-title{
+	opacity: 0.5;
+}
+.tab-title {
+	padding: 0.4em;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+}
