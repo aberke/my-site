@@ -1,85 +1,42 @@
+/* COLOR: #074659 */
+
 /*  Mass Reset */
 *{ margin: 0; padding: 0; border: 0; 
-	font-family: "source-sans-pro", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #074659;
 	list-style-type: none;
 	text-decoration: none;
 }
 
-html, body{
-	background-color: black;
+html {
 	height: 100%;
 	width: 100%;
 }
+body {
+	height: 100%;
+	padding: 1em;
+}
 
 #content {
-	height: 90%;
+	height: 85%;
 }
 
-/*- tabs ------------------------*/
-#tabs {
-	width: 90%;
-	margin: auto;
-	height: 40px;
-	background-color: white;
-	opacity: 0.6;
-}
-#tabs li {
-	height: 100%;
-	border-right: 4px solid black;
-	border-left: 4px solid black;
-	display: inline-block;
-	min-width: 100px;
-	vertical-align: top;
-	text-align: center;
-	cursor: pointer;
-	float: left;
-}
-#handle-tab {
-	margin-left: 100px;
-}
-@media (max-width: 500px) {
-	#handle-tab {
-		margin-left: 30px;
-	}
-}
-#tabs li.selected,
-#tabs li:hover {
-	background-color: black;
-	cursor: initial;
-}
-#tabs li.selected .tab-title,
-#tabs li:hover .tab-title{
-	background-color: black;
-	color: white;
-}
-.tab-title {
-	margin-top: 5px;
-	font-size: 20px;
-	font-weight: bold;
-	display: block;
-}
-/*------------------------ tabs -*/
 
-#handle-div,
-#resume-div{display: none;}
-#handle-div.selected,
-#resume-div.selected{display: block;}
-
-/* handle below */
 #handle-div{
 	position: relative;
 	width: auto;
 	max-width: 400px;
 	margin: auto;
 	top: 40%;
-	background-color: white;
 	opacity: 0.7;
 	text-align: center;
 	padding: 1em;
-	border: 1px solid black;
-	border-radius: 6px;
-	font-size: 20px;
+	font-size: 1.3em;
+}
+@media (max-width: 700px) {
+	#handle-div{
+		font-size: 1em;
+	}
 }
 #handle-div a{
 	display: block;
@@ -95,25 +52,4 @@ html, body{
 #github-handle{padding-top: 10px;}
 #github-icon{
 	vertical-align: middle;
-}
-
-/* handle above */
-
-/* resume below */
-#resume-div{
-	background-color: rgba(255,255,255,0.4);
-	border: 1px solid white;
-	border-radius: 8px;
-	padding: 10px;
-	width: 90%;
-	height: 90%;
-	max-width: 900px;
-	margin: 50px auto;
-	overflow: scroll;
-}
-#resume-div img,
-#resume-div embed{
-	display: inline-block;
-	width: 100%;
-	height: 100%;
 }
