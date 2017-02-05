@@ -1,0 +1,149 @@
+{
+	"Name": "Alex Berke",
+	"links": {
+		"Website": "http://aberke.com",
+		"MailTo": "mailto:alex@aberke.com",
+		"Instagram": "https://www.instagram.com/alextakestheinternet/",
+		"Medium Blog": "https://medium.com/@aberke/",
+		"LinkedIn": "https://www.linkedin.com/in/alex-berke",
+		"Github": "https://github.com/aberke",
+		"Twitter": "https://twitter.com/AlexandraBerke"
+	},
+	"Education": {
+		"Degrees": ["B.A. Mathematics", "B.A. Computer Science"],
+		"Brown University": "2013"
+	},
+	"Professional": [{
+		"Organization": "Hillary For America",
+		"Dates": "February 2016 - November 2016",
+		"Role": "Technologist on the Data Infrastructure Team",
+		"Location": "Campaign Headquarters, Brooklyn, NY",
+		"Description": "I worked on the technology team for Hillary Clinton’s 2016 presidential campaign, designing and building applications and data infrastructure tools.  Many of these tools directly supported online fundraising efforts through which the campaign fundraised hundreds of millions of dollars in online donations.",
+		"Technologies": "SciPy, Postgres, Redis, SMTP, Ansible, Travis, CDNs, everything AWS - from S3 to SNS - the whole gamut",
+		"Languages": ["Python", "Javascript", "SQL", "HTML", "CSS", "Ruby"],
+		"Frameworks": ["Flask", "Django", "React", "NuclearJS", "Rails"],
+		"Projects": [
+			"[Voter Bot] Chatbot for voter registration and voter protection - I designed and wrote a chatbot that allowed users to lookup or update their registration status. It also provided voters with information specific to their states, sent out notifications about key dates, and sent users personalized information about their polling location.  It automatically responded to users with content tailored to their inquiries, but also caught and highlighted messages from users that were important for our voter protection specialists and lawyers to notice and respond to.  Voters talked to the bot through Facebook Messenger.  The bot had an internal web portal for our lawyers and voter protection specialists to take over a conversation where the chatbot had left off and directly interact with users.",
+			"[Research] Worked with a visiting Google researcher, exploring the use and effect of language by the different candidates on social media.  Set up pipelines to continuously mine social media data and then analyzed it with machine learning techniques.",
+			"[Imagemanager] Internal web application that allowed the campaign to manage the media assets on the website.",
+			"[Balloon] Mass emailer that allowed our email content teams to compose both the organizing and fundraising emails, and then send them to millions of recipients, collecting and displaying feedback on open rates and donations generated in real time.  This application allowed our team to scientifically cut and A/B test lists of recipients to discover the most successful language in emails.  It also allowed the content of mass emails to be personalized for the recipients so that emails acknowledged not only the recipient's names, but also their past contributions.",
+			"[Pogostick] Our own 'Bitly'.  I coauthored the campaign's shortlink and general link redirection service.  Reason this was necessary: When links were sent out in mass text message blasts, our organizers needed the links to be personalized for the individual recipients.  The volume of shortlinks we needed was too high for link shortener services like Bitly, unless the campaign wanted to pay an excessive price.",
+			"[Further email tools] Built out tools that allowed fundraising emails sent in mass to ask individual recipients for personalized donation amounts based on their past donation history.  This tooling also enabled the secure, immediate processing of donations from the click of a button in an email.",
+			"[Stork] Contributed to an internal tool used by data directors across the country for analyzing and processing large amounts of data stored in our central database cluster.",
+			"[Pneumatic] Architected and coauthored a system that allowed our email team to design email campaigns sent out to users at optimized times after specific user actions.  For example, 'abandoned donations' - if users landed on our donation page and made it part way through filling out a donation form and then abandoned it, we sent follow up emails after optimized delays, bringing the user back to their form where they had left off.  The same strategy and tooling was applied to emails sent for voter registration, organizing, and phone-banking efforts.",
+			"[Constituent Search] Helped build out HFA’s internal catalog of constituents, including their past donations and any other actions taken on any HFA digital property.  The tool allowed the team to cut well targeted lists of recipients for email campaigns and organization efforts, as well as view reporting on who and how many people had taken specific online actions."
+		]
+	}, {
+		"Organization": "Mast Mobile",
+		"Dates": "Aug. 2014 - Feb. 2016",
+		"Role": "Systems architect and senior software engineer",
+		"Location": "Manhattan, NY",
+		"Description": "Mast Mobile is a telecom startup building a modern communications platform.",
+		"Technologies": "Erlang, AWS, CouchDB, Redis, Jenkins, SMPP, XMPP, RabbitMQ, AMQP, iOS, SQL, Docker, Ruby, Javascript",
+		"Involvement": [
+			"As the second full time engineer, I helped transform a prototype into the platform that serves customers as a mobile carrier network.",
+			"Designed and built out systems end to end from the software that implemented business needs, to the database management, systems monitoring, integration tests, and the infrastructure that allowed for continuous deployments to AWS Docker containers.",
+			"Worked with third party mobile network partners and mobile carriers, such as Sprint, to allow Mast Mobile to seamlessly interface with their platforms and network.",
+			"Contributed to large scale open source Erlang projects such as MongooseIM (chat system) and Kazoo (telecom platform)."
+		]
+	}, {
+		"Organization": "Significance Labs",
+		"Dates": "June 2014 - Aug. 2014",
+		"Role": "Hacker in Residence",
+		"Location": "Brooklyn, NY",
+		"Description": "Fellowship assembles entrepreneurial teams with the mission of building products for Americans underserved by technology.",
+		"Involvement": [
+			"Helped research user needs and conduct user studies.",
+			"Built our ideas from ideation sessions into a product that progressed with users' feedback.",
+			"Built in six weeks a mobile client management tool for self-employed house cleaners."
+		]
+	}, {
+		"Organization": "HackNY Fellowship",
+		"Dates": "Summer 2014",
+		"Role": "Mentor",
+		"Location": "New York City",
+		"Description": "Fellowship aims to federate the next generation of hackers for the NYC innovation community.",
+		"Involvement": [
+			"Provided daily mentorship to students with internships at tech companies across New York City.",
+			"Coordinated and facilitated educational lectures and events for the fellows."
+		]
+	}, {
+		"Organization": "Huffpost Labs",
+		"Dates": "Sept. 2013 - June 2014",
+		"Role": "Lead Engineer",
+		"Location": "Manhattan, NY",
+		"Description": "Labs group embedded within the Huffington Post headquarters, exploring and building innovative technologies for news.",
+		"Technologies": "GoLang, Clojure, Python, NodeJS, Javascript, AngularJS, Postgres, SQL, MongoDB",
+		"Involvement": [
+			"Built and launched the entirety of our team’s products, including a technology we patented.",
+			"Worked with editors - our team’s primary stakeholders - to develop new products to help produce content, such as a tool for producing online quizzes and embedding them in articles.  The Huffington Post sold more than $100k in sponsored content with this tool within the first four months of its release.",
+			"Published educational articles about technologies, such as my three part series on Bitcoin: http://www.huffingtonpost.com/2013/11/25/bitcoin-basics-explained-_n_4340141.html"
+		]
+	}, {
+		"Organization": "Thinkful",
+		"Dates": "Summer 2013",
+		"Role": "Full Stack Developer Intern",
+		"Location": "Manhattan, NY",
+		"Description": "Labs group embedded within the Huffington Post headquarters, exploring and building innovative technologies for news.",
+		"Technologies": "Python, Javascript, AngularJS",
+		"Involvement": "Helped build the company’s initial website and developed tutorials and educational content."
+	}, {
+		"Organization": "HackNY Fellowship",
+		"Dates": "Summer 2013",
+		"Role": "Fellow",
+		"Location": "New York City",
+		"Description": "Fellowship aims to 'federate the next generation of hackers for the NYC innovation community'.",
+		"Involvement": [
+			"Attended semiweekly lectures given by technology company leaders throughout New York City.",
+			"Participated in Hackathons and collaborated on technology projects with the other fellows."
+		]
+	}, {
+		"Organization": "Brown University Computer Science",
+		"Dates": "Spring 2013",
+		"Role": "Head Teaching Assistant for Linear Algebra Computer Science course",
+		"Location": "Brown University",
+		"Involvement": [
+			"Managed team of 3 other teaching assistants; Wrote and graded course content and assignments.",
+			"Held semiweekly office hours, proctored semiweekly labs, and ran review sessions."
+		]
+	}, {
+		"Organization": "Brown University Computer Science",
+		"Dates": "Summer 2012",
+		"Role": "Assistant in Curriculum Writing",
+		"Involvement": "Worked closely with Professor Philip Klein to help develop and write content, problem sets, and labs for his recently published textbook: 'Coding The Matrix: Linear Algebra Through Computer Science Applications'."
+	}, {
+		"Organization": "Vistaprint",
+		"Dates": "Summer 2012",
+		"Role": "Software Engineer Intern",
+		"Involvement": "Integrated new HTML5 technology features into the company website’s file uploading system; replaced dependency on Flash technology."
+	}],
+	"Volunteer": [{
+		"Organization": "Top Honors",
+		"Dates": "Nov. 2015 - Mar. 2016",
+		"Role": "Math Tutor",
+		"Location": "New York City",
+		"Involvement": "Volunteered weekly to help NYC public school students improve their math and critical thinking abilities."
+	}, {
+		"Organization": "Elizabeth Street Garden",
+		"Dates": "Apr. 2015 - Sep. 2015",
+		"Role": "Treasurer",
+		"Location": "Elizabeth Street Garden, Manhattan, NY"
+	}, {
+		"Organization": "West House Cooperative at Brown University",
+		"Dates": "Nov. 2015 - Mar. 2016",
+		"Role": "Sep. 2012 - May 2013",
+		"Location": "Brown University, Providence, RI",
+		"Involvement": "Managed the budget, collection of dues, and allocation or financial resources for an environmentally focused cooperative house that provided housing and meals for more than 30 students."
+	}, {
+		"Organization": "Cambridge Youth Soccer",
+		"Dates": "March 2008 - Spring 2008",
+		"Role": "Head Coach",
+		"Location": "Cambridge, MA",
+		"Involvement": "I was head couch for an Under-12 girls soccer team for the city's youth soccer league."
+	},{
+		"Organization": "Harvard Square Homeless Shelter",
+		"Dates": "March 2006 - Spring 2009",
+		"Role": "Volunteer Coordinator",
+		"Location": "Cambridge, MA"
+	}]
+}

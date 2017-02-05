@@ -63,7 +63,8 @@ p {
 	color: gainsboro;
 }
 
-#handle-div img {
+#handle-div img, #handle-div .img {
+	color: white;
 	margin-left: 0;
 	margin-right: 10px;
 }

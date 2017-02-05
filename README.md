@@ -3,7 +3,7 @@
 my-site
 =======
 
-hello (ww)world: http://www.alexandraberke.com
+hello (ww)world: http://www.aberke.com
 
 
 Running Locally
@@ -24,6 +24,14 @@ $ virtualenv venv
 $ source venv/bin/activate
 ```
 
-* Install dependencies: ```$ pip install -r requirements.txt``` (may need to run with sudo)
+* Install python dependencies ```$ pip install -r requirements.txt```
+
+* Set up Resume API
+```
+$ npm install -g bower
+$ bower install
+```
+
 * Run server ```$ python main.py``` and visit <http://127.0.0.1:5000>
 
+API resume borrowed from https://github.com/afeld/api.afeld.me
