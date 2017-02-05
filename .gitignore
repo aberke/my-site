@@ -25,3 +25,5 @@ lib64
 pip-log.txt
 
 venv
+
+/static/bower_components/
