@@ -1,7 +1,0 @@
-{
-  "name": "my-site",
-  "private": true,
-  "dependencies": {
-    "jsonpanel": "~0.1.0"
-  }
-}
