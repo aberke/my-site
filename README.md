@@ -24,3 +24,5 @@ $ source venv/bin/activate
 * Run server ```$ python main.py``` and visit <http://127.0.0.1:5000>
 
 CREDIT: API resume borrowed from https://github.com/afeld/api.afeld.me
+
+Hosting: With Github Pages because its CDN is fast and free Heroku is slow
