@@ -5,16 +5,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return send_file('static/html/index.html')
+	return send_file('index.html')
 
 @app.route('/resume.json')
 def resume_json():
-	return send_file('static/resume.json')
+	return send_file('resume.json')
 
 
 @app.route('/api/resume')
 def api_resume():
-	return send_file('static/html/api-resume.html')
+	return send_file('api-resume.html')
 
 
 if __name__ == '__main__':
