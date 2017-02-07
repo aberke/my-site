@@ -1,3 +1,8 @@
+""" Simply serves the files
+
+Mimics fashion in which github pages serves files.
+"""
+
 from flask import Flask, send_file
 
 app = Flask(__name__)
@@ -12,9 +17,9 @@ def resume_json():
 	return send_file('resume.json')
 
 
-@app.route('/api/resume')
+@app.route('/resume-json')
 def api_resume():
-	return send_file('api-resume.html')
+	return send_file('resume-json.html')
 
 
 if __name__ == '__main__':
