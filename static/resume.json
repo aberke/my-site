@@ -14,6 +14,17 @@
 		"Brown University": "2013"
 	},
 	"Professional": [{
+		"Organization": "Google",
+		"Dates": "June 2017 - Present",
+		"Location": "Manhattan, NY"
+	}, {
+		"Organization": "Pioneer Works",
+		"Dates": "March 2017 - May 2017",
+		"Role": "Technology Resident",
+		"Location": "Brooklyn, NY",
+		"Description": "Pioneer Works is a non-profit cultural center dedicated to experimentation, education and production across disciplines. http://pioneerworks.org",
+		"Project": "Designed and wrote a coloring book that explores the mathematical study of group theory.  The coloring book is intended for learners of all ages, children and adults alike.  Check it out: http://coloring-book.co."
+	}, {
 		"Organization": "Hillary For America",
 		"Dates": "February 2016 - November 2016",
 		"Role": "Technologist on the Data Infrastructure Team",
