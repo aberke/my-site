@@ -41,7 +41,7 @@ body {
 
 h1 {
 	padding: 40px 0;
-	font-size: 3em;
+	font-size: 2.5em;
 }
 
 h2, h3 {
@@ -143,6 +143,10 @@ p {
 	}
 	#handle-div p{
 		font-size: 0.7em;
+	}
+	
+	#handle-div .last.img {
+		margin-right: 15px;
 	}
 
 	.side-hack-container iframe,
