@@ -30,11 +30,22 @@ body {
 
 #content {
 	padding: 4em;
+	max-width: 700px;
+	margin: auto;
+}
+
+#content hr {
+	margin: 30px 0;
+	border: 1px dashed azure;
 }
 
 h1 {
 	padding: 40px 0;
 	font-size: 3em;
+}
+
+h2, h3 {
+	font-weight: 200;
 }
 
 #content p {
@@ -45,14 +56,21 @@ h1 {
 	width: 20px;
 	margin-left: 10px;
 }
-#content p a {
+#content a.current-project {
 	color: gainsboro;
-	border-bottom: 1px solid white;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 1.2em;
+}
+@media (max-width: 700px) {
+	#content a.current-project {
+		font-size: 0.9em;
+	}
 }
 
 p {
 	padding: 0.4em 0;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 #handle-div p{
@@ -68,11 +86,50 @@ p {
 	margin-left: 0;
 	margin-right: 10px;
 }
+
+.side-hack-container {
+	margin-bottom: 30px;
+}
+.side-hack-container .name, .side-hack-container .name a {
+	font-weight: 100;
+	color: azure;
+	padding: 10px 0;
+	margin-top: 5px;
+}
+.side-hack-container a.link {
+	color: azure;
+	text-decoration: underline;
+}
+.side-hack-container .description {
+	font-style: italic;
+}
+.side-hack-container .description a {
+	color: white;
+	text-decoration: underline;
+}
+.side-hack-container iframe, .side-hack-container video {
+	display: block;
+	width: 440px;
+}
+.side-hack-container iframe {
+	background: white;
+	height: 400px;
+}
+
+
+
 @media (max-width: 700px) {
 	#content {
 		padding: 1.4em;
 	}
 	#handle-div p{
 		font-size: 0.7em;
+	}
+
+	.side-hack-container iframe, .side-hack-container video {
+		width: 300px;
+	}
+	.side-hack-container iframe {
+		height: 250px;
 	}
 }
