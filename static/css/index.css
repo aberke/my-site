@@ -107,18 +107,15 @@ p {
 	color: white;
 	text-decoration: underline;
 }
-.side-hack-container .iframe-container,
+.side-hack-container iframe,
 .side-hack-container video {
 	display: block;
 	width: 440px;
 }
-.iframe-container iframe {
-	width: 100%;
-	height: 100%;
-}
-.side-hack-container .iframe-container {
+.side-hack-container iframe {
 	background: white;
 	height: 400px !important;
+	overflow: scroll;
 }
 
 #writing-list li {
@@ -143,10 +140,11 @@ p {
 		font-size: 0.7em;
 	}
 
-	.side-hack-container .iframe-container, .side-hack-container video {
+	.side-hack-container iframe,
+	.side-hack-container video {
 		width: 300px;
 	}
-	.side-hack-container .iframe-container {
+	.side-hack-container iframe {
 		height: 250px !important;
 	}
 }
