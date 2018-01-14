@@ -16,7 +16,9 @@
 	"Professional": [{
 		"Organization": "Google",
 		"Dates": "June 2017 - Present",
-		"Location": "Manhattan, NY"
+		"Location": "Manhattan, NY",
+		"Role": "Engineering",
+		"Description": "I work on Google Search, within a team whose mission is to leverage technology for social impact.",
 	}, {
 		"Organization": "Pioneer Works",
 		"Dates": "March 2017 - May 2017",
@@ -129,6 +131,10 @@
 		"Involvement": "Integrated new HTML5 technology features into the company website’s file uploading system; replaced dependency on Flash technology."
 	}],
 	"Volunteer": [{
+		"Organization": "Flippable",
+		"Dates": "Winter 2016/2017",
+		"Role": "Technical consultant",
+	}, {
 		"Organization": "Top Honors",
 		"Dates": "Nov. 2015 - Mar. 2016",
 		"Role": "Math Tutor",
@@ -137,12 +143,11 @@
 	}, {
 		"Organization": "Elizabeth Street Garden",
 		"Dates": "Apr. 2015 - Sep. 2015",
-		"Role": "Treasurer",
 		"Location": "Elizabeth Street Garden, Manhattan, NY"
 	}, {
 		"Organization": "West House Cooperative at Brown University",
-		"Dates": "Nov. 2015 - Mar. 2016",
-		"Role": "Sep. 2012 - May 2013",
+		"Dates": "Sep. 2012 - May 2013",
+		"Role": "Treasurer",
 		"Location": "Brown University, Providence, RI",
 		"Involvement": "Managed the budget, collection of dues, and allocation or financial resources for an environmentally focused cooperative house that provided housing and meals for more than 30 students."
 	}, {
