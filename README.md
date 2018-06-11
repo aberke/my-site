@@ -1,4 +1,4 @@
-<img width="200px" src="http://www.alexandraberke.com/static/favicon-big.gif" alt="logo" align="right" />
+<img width="200px" src="http://www.aberke.com/static/favicon-big.gif" alt="logo" align="right" />
 
 my-site
 =======
