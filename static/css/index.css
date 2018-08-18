@@ -21,22 +21,61 @@ body {
 	height: 100%;
 }
 
-#top-bar {
+/*#top-bar {
 	width: 100%;
 	height: 15px;
 	background-color: azure;
 	position: fixed;
+}*/
+
+section {
+	width: 100%;
 }
 
-#content {
+section#general-info,
+section#side-hacks {
+	border-top: 15px solid azure;
+}
+section#side-hacks,
+section#writing {
+	background-color: white;
+}
+section#side-hacks {
+	border-top-width: 25px;
+	background-color: white;
+}
+
+.content {
 	padding: 4em;
 	max-width: 700px;
 	margin: auto;
 }
 
-#content hr {
+section#general-info .content p {
+	color: gainsboro;
+}
+
+section#side-hacks a,
+section#writing a {
+	color: darkslategray;
+}
+section#side-hacks p,
+section#side-hacks h2,
+section#side-hacks h3,
+section#side-hacks .name a,
+section#writing p,
+section#writing h2,
+section#writing h3,
+section#writing li {
+	color: black;
+}
+
+hr {
 	margin: 30px 0;
-	border: 1px dashed azure;
+	border: 1px dashed black;
+}
+#general-info hr {
+	border-color: azure;
 }
 
 h1 {
@@ -48,22 +87,19 @@ h2, h3 {
 	font-weight: 200;
 }
 
-#content p {
-	color: gainsboro;
-}
-#content img {
+.content img {
 	height: 20px;
 	width: 20px;
 	margin-left: 10px;
 }
-#content a.current-project {
+.content a.current-project {
 	color: gainsboro;
 	text-decoration: underline;
 	font-style: italic;
 	font-size: 1.2em;
 }
 @media (max-width: 700px) {
-	#content a.current-project {
+	.content a.current-project {
 		font-size: 0.9em;
 	}
 }
@@ -90,9 +126,9 @@ p {
 .side-hack-container {
 	margin-bottom: 30px;
 }
-.side-hack-container .name, .side-hack-container .name a {
+.side-hack-container .name,
+.side-hack-container .name a {
 	font-weight: 100;
-	color: azure;
 	padding: 10px 0;
 	margin-top: 5px;
 }
@@ -107,6 +143,7 @@ p {
 	color: white;
 	text-decoration: underline;
 }
+
 .side-hack-container iframe,
 .side-hack-container video,
 .side-hack-container #love-bot-img {
@@ -127,10 +164,10 @@ p {
 	display: block;
 	margin: 10px 0;
 	list-style-type: circle;
+	color: black;
 
 }
 #writing-list li a {
-	color: azure;
 	display: inline-block;
 	text-decoration: underline;
 }
@@ -138,7 +175,7 @@ p {
 
 
 @media (max-width: 700px) {
-	#content {
+	.content {
 		padding: 1.4em;
 	}
 	#handle-div p{
