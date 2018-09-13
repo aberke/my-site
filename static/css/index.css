@@ -146,18 +146,26 @@ p {
 
 .side-hack-container iframe,
 .side-hack-container video,
-.side-hack-container #love-bot-img {
+.side-hack-container {
 	display: block;
-	width: 440px;
+	width: 98%;
+}
+
+.side-hack-container iframe,
+.side-hack-container video,
+.side-hack-container #love-bot-img {
+
 }
 .side-hack-container iframe {
 	background: white;
-	height: 400px !important;
+	height: 600px;
 	overflow: scroll;
 }
 .side-hack-container #love-bot-img {
 	height: auto;
 	margin: 0;
+	display: block;
+	width: 440px;
 }
 
 #writing-list li {
@@ -186,12 +194,8 @@ p {
 		margin-right: 15px;
 	}
 
-	.side-hack-container iframe,
 	.side-hack-container video,
 	.side-hack-container #love-bot-img {
 		width: 300px;
-	}
-	.side-hack-container iframe {
-		height: 250px !important;
 	}
 }
