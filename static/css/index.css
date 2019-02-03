@@ -74,8 +74,8 @@ section#talks h3 {
 #talks li {
 	margin: 5px 0;
 }
-#talks a {
-	text-decoration: underline;
+#talks #talks-list a {
+	text-decoration: none;
 }
 
 hr {
