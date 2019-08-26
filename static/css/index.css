@@ -1,10 +1,10 @@
 /* COLOR: #074659 */
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,600,700');
 
 /*  Mass Reset */
 *{ margin: 0; padding: 0; border: 0; 
-	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	list-style-type: none;
 	text-decoration: none;
 }
@@ -89,6 +89,7 @@ hr {
 h1 {
 	padding: 40px 0;
 	font-size: 2.5em;
+	font-weight: 400;
 }
 
 h2, h3 {

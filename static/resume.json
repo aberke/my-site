@@ -11,7 +11,8 @@
 	},
 	"Education": {
 		"Degrees": ["B.A. Mathematics", "B.A. Computer Science"],
-		"Brown University": "2013"
+		"Brown University": "2013",
+		"MIT Media Lab": "2018 - present"
 	},
 	"Professional": [{
 		"Organization": "Google",
@@ -22,7 +23,7 @@
 	}, {
 		"Organization": "Pioneer Works",
 		"Dates": "March 2017 - May 2017",
-		"Role": "Technology Resident",
+		"Role": "Technology / Art Resident",
 		"Location": "Brooklyn, NY",
 		"Description": "Pioneer Works is a non-profit cultural center dedicated to experimentation, education and production across disciplines. http://pioneerworks.org",
 		"Project": "Designed and wrote a coloring book that explores the mathematical study of group theory.  The coloring book is intended for learners of all ages, children and adults alike.  Check it out: http://coloring-book.co."
@@ -60,15 +61,15 @@
 			"Contributed to large scale open source Erlang projects such as MongooseIM (chat system) and Kazoo (telecom platform)."
 		]
 	}, {
-		"Organization": "Significance Labs",
+		"Organization": "Blueridge Labs",
 		"Dates": "June 2014 - Aug. 2014",
-		"Role": "Hacker in Residence",
+		"Role": "Engineer in Residence",
 		"Location": "Brooklyn, NY",
-		"Description": "Fellowship assembles entrepreneurial teams with the mission of building products for Americans underserved by technology.",
+		"Description": "Fellowship assembles entrepreneurial teams with the mission of building high-quality technology products for low-income Americans. https://labs.robinhood.org/",
 		"Involvement": [
+			"Built a mobile client management tool for self-employed house cleaners in six weeks.",
 			"Helped research user needs and conduct user studies.",
-			"Built our ideas from ideation sessions into a product that progressed with users' feedback.",
-			"Built in six weeks a mobile client management tool for self-employed house cleaners."
+			"Built our ideas from ideation sessions into a product that progressed with users' feedback."
 		]
 	}, {
 		"Organization": "HackNY Fellowship",
