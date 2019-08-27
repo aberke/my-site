@@ -159,6 +159,10 @@ p {
 	display: block;
 	width: 98%;
 }
+iframe#bikeswarm-youtube {
+	width: 500px;
+	height: 300px;
+}
 
 .side-hack-container iframe,
 .side-hack-container video,
@@ -206,5 +210,9 @@ p {
 	.side-hack-container video,
 	.side-hack-container #love-bot-img {
 		width: 300px;
+	}
+	iframe#bikeswarm-youtube {
+		width: unset;
+		height: unset;
 	}
 }
