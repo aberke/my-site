@@ -183,7 +183,8 @@ iframe#bikeswarm-youtube {
 	overflow: scroll;
 }
 
-.side-hack-container #love-bot-img {
+.side-hack-container #love-bot-img,
+.side-hack-container #mit-press-2020-cover {
 	height: auto;
 	margin: 0;
 	display: block;
