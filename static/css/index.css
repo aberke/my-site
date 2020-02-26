@@ -164,21 +164,30 @@ iframe#bikeswarm-youtube {
 	height: 300px;
 }
 
-.side-hack-container iframe,
-.side-hack-container video,
-.side-hack-container #love-bot-img {
-
+.side-hack-container .img-carousel {
+	overflow-x: auto;
+	display: flex;
+	margin-bottom: 8px;
+	
 }
+.side-hack-container .img-carousel img {
+	width: auto;
+	height: 380px;
+	margin-left: 0;
+	margin-right: 10px;
+}
+
 .side-hack-container iframe {
 	background: white;
 	height: 600px;
 	overflow: scroll;
 }
+
 .side-hack-container #love-bot-img {
 	height: auto;
 	margin: 0;
 	display: block;
-	width: 440px;
+	width: 400px;
 }
 
 #writing-list li {
