@@ -217,8 +217,7 @@ iframe#bikeswarm-youtube {
 	}
 
 	.side-hack-container video,
-	.side-hack-container #love-bot-img,
-	.side-hack-container #mit-press-2020-cover {
+	.side-hack-container .hack-img {
 		width: 300px;
 	}
 	iframe#bikeswarm-youtube {
