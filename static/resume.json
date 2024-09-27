@@ -2,7 +2,6 @@
 	"Name": "Alex Berke",
 	"links": {
 		"Website": "http://aberke.com",
-		"MailTo": "mailto:alex@aberke.com",
 		"Instagram": "https://www.instagram.com/alextakestheinternet/",
 		"Medium Blog": "https://medium.com/@aberke/",
 		"LinkedIn": "https://www.linkedin.com/in/alex-berke",
@@ -10,9 +9,16 @@
 		"Twitter": "https://twitter.com/AlexandraBerke"
 	},
 	"Education": {
-		"Degrees": ["B.A. Mathematics", "B.A. Computer Science"],
-		"Brown University": "2013",
-		"MIT Media Lab": "2018 - present"
+		"Brown University": {
+			"Date": "2013",
+			"Degrees": ["B.A. Mathematics", "B.A. Computer Science"],
+			"GPA": "3.8/4.0"
+		},
+		"MIT": {
+			"Dates": "2018 - present",
+			"Degrees": ["M.S. Media Arts and Sciences", "PhD (candidate)"],
+			"GPA": "5.0/5.0"
+		}
 	},
 	"Professional": [{
 		"Organization": "Google",

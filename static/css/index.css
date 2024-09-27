@@ -4,7 +4,7 @@
 
 /*  Mass Reset */
 *{ margin: 0; padding: 0; border: 0; 
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Arial', sans-serif;
 	list-style-type: none;
 	text-decoration: none;
 }
@@ -88,7 +88,7 @@ hr {
 
 h1 {
 	padding: 40px 0;
-	font-size: 2.5em;
+	font-size: 1.5em;
 	font-weight: 400;
 }
 
