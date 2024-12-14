@@ -17,13 +17,14 @@ html {
 }
 body {
     background: white;
+	min-height: 600px;
 }
 
 h1, .h1 {
     font-size: 1.5rem;
 }
 h2, .h2, h3, .h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 a, 
@@ -52,6 +53,12 @@ section.container {
     padding-top: 20px;
     border-top: 1px solid gray;
 }
+
+#past-creative-projects p, 
+#past-creative-projects section {
+	font-size: 0.8rem;
+}
+
 iframe,
 video {
 	display: block;
