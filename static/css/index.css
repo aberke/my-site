@@ -1,7 +1,3 @@
-/* COLOR: #074659 */
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,600,700');
-
 /*  Mass Reset */
 *{ margin: 0; padding: 0; border: 0; 
 	font-family: 'Arial', sans-serif;
@@ -16,212 +12,73 @@ a:hover {
 html {
 	height: 100%;
 	width: 100%;
-	background-color: black;
 	color: gainsboro;
+    background: darkslategrey;
 }
 body {
-	height: 100%;
+    background: white;
 }
 
-section {
-	width: 100%;
+h1, .h1 {
+    font-size: 1.5rem;
+}
+h2, .h2, h3, .h3 {
+    font-size: 1.5rem;
 }
 
-section#general-info,
-section#side-hacks {
-	border-top: 15px solid azure;
+a, 
+.navbar-light .navbar-nav a.nav-link {
+    color: black;
 }
-section#side-hacks,
-section#talks,
-section#writing {
-	background-color: white;
+p a {
+    color: darkslategray;
 }
-section#side-hacks {
-	border-top-width: 25px;
-	background-color: white;
-}
-
-.content {
-	padding: 4em;
-	max-width: 700px;
-	margin: auto;
+a:hover,
+p a:hover,
+.navbar-light .navbar-nav a.nav-link:hover {
+    text-decoration: underline;
+    color: black;
 }
 
-section#general-info .content p {
-	color: gainsboro;
+#nav-coloring-book {
+    color: purple;
 }
 
-section#side-hacks a,
-section#talks a,
-section#talks li,
-section#writing a {
-	color: darkslategray;
-}
-section#side-hacks p,
-section#side-hacks h2,
-section#side-hacks h3,
-section#side-hacks .name a,
-section#writing p,
-section#writing h2,
-section#writing h3,
-section#writing li,
-section#talks p,
-section#talks h2,
-section#talks h3 {
-	color: black;
+#headshot {
+    max-width: 200px;
 }
 
-#talks li {
-	margin: 5px 0;
+section.container {
+    padding-top: 20px;
+    border-top: 1px solid gray;
 }
-#talks #talks-list a {
-	text-decoration: none;
-}
-
-hr {
-	margin: 30px 0;
-	border: 1px dashed black;
-}
-#general-info hr {
-	border-color: azure;
-}
-
-h1 {
-	padding: 40px 0;
-	font-size: 1.5em;
-	font-weight: 400;
-}
-
-h2, h3 {
-	font-weight: 200;
-}
-
-.content img {
-	height: 20px;
-	width: 20px;
-	margin-left: 10px;
-}
-.content a.current-project {
-	color: gainsboro;
-	text-decoration: underline;
-	font-style: italic;
-	font-size: 1.2em;
-}
-@media (max-width: 700px) {
-	.content a.current-project {
-		font-size: 0.9em;
-	}
-}
-
-p {
-	padding: 0.4em 0;
-	font-size: 1em;
-}
-
-#handle-div p{
-	color: gray;
-	font-size: 1em;
-}
-#handle-div p:hover {
-	color: gainsboro;
-}
-
-#handle-div img, #handle-div .img {
-	color: white;
-	margin-left: 0;
-	margin-right: 10px;
-}
-
-.side-hack-container {
-	margin-bottom: 30px;
-}
-.side-hack-container .name,
-.side-hack-container .name a {
-	font-weight: 100;
-	padding: 10px 0;
-	margin-top: 5px;
-}
-.side-hack-container a.link {
-	color: azure;
-	text-decoration: underline;
-}
-.side-hack-container .description {
-	font-style: italic;
-}
-.side-hack-container .description a {
-	color: white;
-	text-decoration: underline;
-}
-
-.side-hack-container iframe,
-.side-hack-container video,
-.side-hack-container {
+iframe,
+video {
 	display: block;
 	width: 98%;
 }
 iframe#bikeswarm-youtube {
-	width: 500px;
-	height: 300px;
+	width: 100%;
+    min-height: 500px;
+}
+#coloring-book iframe {
+	background: white;
+	height: 700px;
+	overflow: scroll;
+}
+img {
+    max-width: 100%;
 }
 
-.side-hack-container .img-carousel {
+.img-carousel {
 	overflow-x: auto;
 	display: flex;
 	margin-bottom: 8px;
 	
 }
-.side-hack-container .img-carousel img {
+.img-carousel img {
 	width: auto;
 	height: 380px;
 	margin-left: 0;
 	margin-right: 10px;
-}
-
-.side-hack-container iframe {
-	background: white;
-	height: 600px;
-	overflow: scroll;
-}
-
-.side-hack-container .hack-img {
-	height: auto;
-	margin: 0;
-	display: block;
-	width: 400px;
-}
-
-#writing-list li {
-	display: block;
-	margin: 10px 0;
-	list-style-type: circle;
-	color: black;
-
-}
-#writing-list li a {
-	display: inline-block;
-	text-decoration: underline;
-}
-
-
-
-@media (max-width: 700px) {
-	.content {
-		padding: 1.4em;
-	}
-	#handle-div p{
-		font-size: 0.7em;
-	}
-	
-	#handle-div .last.img {
-		margin-right: 15px;
-	}
-
-	.side-hack-container video,
-	.side-hack-container .hack-img {
-		width: 300px;
-	}
-	iframe#bikeswarm-youtube {
-		width: unset;
-		height: unset;
-	}
 }

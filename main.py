@@ -21,10 +21,9 @@ def resume_json():
 def api_resume():
 	return send_file('resume-json.html')
 
-@app.route('/old-projects')
-def old_projects():
-	return send_file('old-projects.html')
-
+@app.route('/past-creative-projects')
+def past_creative_projects():
+	return send_file('past-creative-projects.html')
 
 if __name__ == '__main__':
 	app.run()
