@@ -42,6 +42,9 @@ p a:hover,
 }
 
 #nav-coloring-book {
+    color: darkslategray;
+}
+#nav-coloring-book:hover {
     color: purple;
 }
 
