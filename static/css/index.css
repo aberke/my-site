@@ -92,3 +92,6 @@ img {
 	margin-left: 0;
 	margin-right: 10px;
 }
+.img-carousel.babycastles img {
+	height: 170px;
+}
